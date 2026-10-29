@@ -1,4 +1,4 @@
-# @cubing-way/cstimer-scrambles
+# @cubing-way/cstimer-engine
 
 csTimer's scramble generators as a typed, tree-shakeable ESM/CJS library.
 
@@ -11,7 +11,7 @@ Open the [demo page](https://cubing-way.github.io/cstimer-scrambles/) to generat
 ## Usage
 
 ```ts
-import { getScramble, listEvents, setSeed } from '@cubing-way/cstimer-scrambles';
+import { getScramble, listEvents, setSeed } from '@cubing-way/cstimer-engine';
 
 getScramble('333'); // "D2 B2 R' B2 R' F2 L R2 ..."
 listEvents().map((e) => e.id); // ['333', '333fm', 'edges', 'corners', 'll']
@@ -26,7 +26,7 @@ Scramble type ids match csTimer's, so `getScramble('333fm')` is what csTimer cal
 `getScrambleImage(type, scramble)` draws the scrambled puzzle as an SVG string, the same picture csTimer's "Draw Scramble" tool shows (for cubes an unfolded net with U on top and F in the middle; csTimer's default colors). The SVG has no background of its own, so it takes the color of whatever it's placed on. It works in browsers and in Node.
 
 ```ts
-import { getScramble, getScrambleImage, hasScrambleImage } from '@cubing-way/cstimer-scrambles';
+import { getScramble, getScrambleImage, hasScrambleImage } from '@cubing-way/cstimer-engine';
 
 const scramble = getScramble('333');
 const svg = getScrambleImage('333', scramble); // '<svg viewBox="0 0 396 296" ...>...</svg>'
@@ -40,7 +40,7 @@ Pass the scramble type the scramble was made for. Every puzzle csTimer can draw 
 `new Puzzle(id)` is one physical puzzle with its own settings: face colors, image size, scramble method and scramble length. Settings are `set...` methods that return the puzzle, so they can be chained, and two puzzles never share settings.
 
 ```ts
-import { Puzzle } from '@cubing-way/cstimer-scrambles';
+import { Puzzle } from '@cubing-way/cstimer-engine';
 
 const cube = new Puzzle('333')
   .setColors({ U: '#ff0', D: '#fff' }) // yellow on top

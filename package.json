@@ -1,8 +1,17 @@
 {
-  "name": "@cubing-way/cstimer-scrambles",
+  "name": "@cubing-way/cstimer-engine",
   "version": "0.1.0",
   "description": "csTimer's scramble generators as a modern, typed ESM library",
   "license": "GPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cubing-Way/cstimer-scrambles.git"
+  },
+  "homepage": "https://cubing-way.github.io/cstimer-scrambles/",
+  "bugs": "https://github.com/Cubing-Way/cstimer-scrambles/issues",
+  "publishConfig": {
+    "access": "public"
+  },
   "type": "module",
   "exports": {
     ".": {

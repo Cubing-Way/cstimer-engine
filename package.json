@@ -5,10 +5,10 @@
   "license": "GPL-3.0-or-later",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Cubing-Way/cstimer-scrambles.git"
+    "url": "git+https://github.com/Cubing-Way/cstimer-engine.git"
   },
-  "homepage": "https://cubing-way.github.io/cstimer-scrambles/",
-  "bugs": "https://github.com/Cubing-Way/cstimer-scrambles/issues",
+  "homepage": "https://cubing-way.github.io/cstimer-engine/",
+  "bugs": "https://github.com/Cubing-Way/cstimer-engine/issues",
   "publishConfig": {
     "access": "public"
   },

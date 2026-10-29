@@ -6,7 +6,7 @@ The scrambling logic comes from [csTimer](https://github.com/cs0x7f/cstimer) by 
 
 ## Try it
 
-Open the [demo page](https://cubing-way.github.io/cstimer-scrambles/) to generate scrambles in your browser. It's rebuilt from `demo/index.html` on every push to `main`.
+Open the [demo page](https://cubing-way.github.io/cstimer-engine/) to generate scrambles in your browser. It's rebuilt from `demo/index.html` on every push to `main`.
 
 ## Usage
 
@@ -75,7 +75,7 @@ Puzzles: `listPuzzles()` gives their ids: first the WCA puzzles (`222` to `777`,
 
 ## Supported events
 
-All 206 scramble types in csTimer's menu are supported, with csTimer's ids (everything except its UI-only entries: input, remote, BLD helper, pattern tool and custom). `listEvents()` returns them all with a name and a `puzzle` group; the [demo page](https://cubing-way.github.io/cstimer-scrambles/) has them all, picked by puzzle and then type.
+All 206 scramble types in csTimer's menu are supported, with csTimer's ids (everything except its UI-only entries: input, remote, BLD helper, pattern tool and custom). `listEvents()` returns them all with a name and a `puzzle` group; the [demo page](https://cubing-way.github.io/cstimer-engine/) has them all, picked by puzzle and then type.
 
 The WCA events:
 
